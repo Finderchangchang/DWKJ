@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dw.kj.ui.SetIpActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="0dp"></LinearLayout>
+
+    <TextView
+        android:id="@+id/ip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP  "
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="76dp" />
+
+    <EditText
+        android:id="@+id/ip_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/ip_tv"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.008" />
+
+    <TextView
+        android:id="@+id/port_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="端口"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <EditText
+        android:id="@+id/port_et"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        app:layout_constraintRight_toRightOf="@+id/ip_et"
+        tools:layout_editor_absoluteY="117dp"
+        android:layout_marginRight="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/ip_et"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/have_s_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="是否带s"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/port_tv"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="167dp" />
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:text="保存"
+        app:layout_constraintTop_toBottomOf="@+id/port_et"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+</android.support.constraint.ConstraintLayout>
